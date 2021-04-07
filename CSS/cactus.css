@@ -1,3 +1,28 @@
 header {
-	background-color: pink
+	background-color: #10C623;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+body {
+	margin: 0;
+	font-family: 'verdana', sans-serif;
+}
+
+footer {
+	background-color: #10C623;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer p {
+	text-align: center;
+}
+
+h1, h2{
+	font-family:'Poiret One', cursive;
+}
+
+h1{
+	font-size: 55px;
 }
