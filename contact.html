@@ -10,12 +10,15 @@
 <body>
 
 <header> 
-	<h1>Cactus Store</h1>
+	<h1>Cactus Shop</h1>
+	<nav>
 	<ul>
 		<li> <a href="index.html">Home</a></li>
 		<li><a href="">Shop</a></li>
 		<li><a target="blank" href="contact.html">Contact Us</a></li>
 	</ul>
+	</nav>
+	<input type="search" placeholder="Search" name="">
 </header>
 
 	<!-- Main Element -->
@@ -27,25 +30,52 @@
 	</div>
 
 	<div>
-		<label for="email">E-mail: </label><input type="text" name="email" placeholder="e.g. johnsmith@gmail.com" id="email">
+		<label for="email">E-mail: </label><input type="text" name="email" placeholder="e.g. johnsmith@example.com" id="email">
 	</div>
 
 	<div>
 		<label for="phone number">Phone Number: </label><input type="text" name="phone number" placeholder="e.g. +44 1234 123456" id="phone number">
 	</div>
 	
+	<!-- <div>
+		<label for="subject">Subject:</label>
+		<select id="subject">
+			<option value="order">Order</option>
+			<option value="delivery">Delivery</option>
+			<option value="returns">Returns</option>
+			<option value="account">Account</option>
+			<option value="product info">Product Info</option>
+			<option value="miscellaneous">Miscellaneous</option>
+		</select>
+	</div> -->
+
 	<div>
-		<label for="text message"> Text Message:</label> <textarea cols="30" rows="5" id="text message" name="text message"></textarea>
+		<label for="subject">Subject:</label>
+		<input type="text" list="subjects" id="subject" placeholder="e.g. Order">
+		<datalist id="subjects">
+			<option value="order">
+			<option value="delivery">
+			<option value="returns">
+			<option value="account">
+			<option value="product info">
+			<option value="miscellaneous">
+		</datalist>
 	</div>
 
 	<div>
-		<label for="subject">Subject:</label><input type="text" name="subject" placeholder="Cowboy cactus" id="subject">
+		<label for="text message"> Text Message:</label> <textarea cols="30" rows="5" id="text message" name="text message"></textarea>
 	</div>
 
 	<div>
 		<p>Subscribe to our newsletter:</p>
 		<label for="yes">Yes:</label><input type="radio" id="yes" name="subscription" checked="" value="yes newsletter">
 		<label for="no">No:</label><input type="radio" id="no" name="subscription" value="no newsletter">
+	</div>
+
+	<div>
+		<!-- <input type="Submit" name=""> -->
+		<button type="Submit">Verzenden</button>
+		<button type="reset">Reset</button>
 	</div>
 </form>
 

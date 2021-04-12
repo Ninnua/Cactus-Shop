@@ -1,16 +1,23 @@
+html {
+	background-color: #f7f7f7;
+}
+
 header {
-	background-color: #10C623;
+	background-color: #27CC24;
 	padding-top: 10px;
 	padding-bottom: 10px;
+
 }
 
 body {
-	margin: 0;
+	background-color: white;
+	max-width: 1200px;
+	margin: 0 auto;
 	font-family: 'verdana', sans-serif;
 }
 
 footer {
-	background-color: #10C623;
+	background-color: #27CC24;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -20,9 +27,83 @@ footer p {
 }
 
 h1, h2{
-	font-family:'Poiret One', cursive;
+	font-family:'Poiret One', cursive, sans-serif;
 }
 
 h1{
 	font-size: 55px;
+	color: white;
+}
+
+h2{
+	font-size: 40px;
+	color: #045502;
+}
+
+.product {
+	box-sizing: border-box;
+	border: 1px lightgray solid;
+	width: 250px;
+	margin: 10px 10px;
+	padding: 10px 5px;
+	display: inline-block;
+}
+
+header li, footer li {
+	display: inline-block;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	line-height: 30px;
+}
+
+header h1, nav {
+	display: inline-block;
+	padding-left: 60px;
+}
+
+main {
+	width: 850px;
+	display: inline-block;
+	padding: 20px;
+}
+
+aside {
+	width: 250px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;	
+}
+
+img {
+	max-width: 100%;
+}
+
+.button {
+	padding: 5px;
+	display:inline-block;
+	}
+
+a {
+	text-decoration: none;
+	color: #045502;
+}
+
+a:visited {
+	color: #045502;
+
+}
+
+a:hover {
+	color: gray;
+}
+
+header a:hover, footer a:hover {
+	color: white;
 }
